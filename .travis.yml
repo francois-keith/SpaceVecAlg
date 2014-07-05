@@ -14,6 +14,6 @@ script: ./.travis/run build
 after_success: ./.travis/run after_success
 after_failure: ./.travis/run after_failure
 before_install:
-  - sudo add-apt-repository ppa:jkeiren/ppa
+  - sudo add-apt-repository -y ppa:jkeiren/ppa
   - ./.travis/run  before_install
   - ./.travis/dependencies/eigen-3.2

@@ -14,7 +14,6 @@ script: ./.travis/run build
 after_success: ./.travis/run after_success
 after_failure: ./.travis/run after_failure
 before_install:
-  - deb http://ppa.launchpad.net/jkeiren/ppa/ubuntu precise main
-  - deb-src http://ppa.launchpad.net/jkeiren/ppa/ubuntu precise main
+  - sudo add-apt-repository ppa:jkeiren/ppa/ubuntu
   - ./.travis/run  before_install
   - ./.travis/dependencies/eigen-3.2
